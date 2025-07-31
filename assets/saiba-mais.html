@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Informações do Hotel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link id="estilo" rel="stylesheet" href="./style-claro.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <header>
+    <div class="menu-prodigy">
+      <a href="https://www.grupowish.com/prodigy-gramado-by-wish">
+        <img id="logo" src="./pgrW.png" alt="Prodigy">
+      </a>
+    </div>
+    <button id="botao-tema" onclick="alternarEstilo()">
+      <i id="icone-tema" class="ri-toggle-line"></i>
+    </button>
+    <div class="menu-icon" onclick="openSidebar()"><i class="ri-menu-line"></i></div>
+  </header>
+  <div id="overlay" class="overlay" onclick="fecharMenu()"></div>
+  <div id="mySidebar" class="sidebar">
+    <span class="closebtn" onclick="closeSidebar()"><i class="ri-close-large-line"></i></span>
+    <a href="https://www.grupowish.com/">Grupo WISH</a>
+    <a href="https://www.grupowish.com/prodigy-gramado-by-wish/acomodacoes">Acomodações</a>
+    <a href="https://www.grupowish.com/prodigy-gramado-by-wish/dog-friendly">Dog Friendly</a>
+  </div>
+
+  <!-- <img class="pgr" src="./pgrW.png" alt=""> -->
+    <main>
+        <h1><i class="ri-time-line"></i> Horários:</h1>
+
+        <h2>Café da manhã & <br>
+            Restaurante Gemini</h2>
+        <h3>Local: Terréo, Torre A</h3>
+        <h3>Café da manhã: 06h30 às 10h30.
+            <br>
+            Restaurante Gemini: 12h às 22h40.
+            <br>
+            Room Service: 12h às 22h40.
+        </h3>
+        <span>Ramal do Room Service: 708.</span>
+        <ul>
+            <li>Não é permitido entrar nos restaurantes com trajes de banho e sem camisa. É proibida a entrada de cães
+                nos restaurantes.</li>
+            <li>Horários sujeitos a alterações em datas especiais.</li>
+        </ul>
+
+        <h2>Piscina Coberta & Academia</h2>
+        <h3>Local: Subsolo 1, Torre B</h3>
+        <h3>Funcionamento: 08h às 22h</h3>
+        <ul>
+            <li>A piscina destina-se a todos os hóspedes, que devem utilizar trajes de banho apropriados.</li>
+            <li>Crianças deverão usar boias (de braço) e estar permanentemente acompanhadas de seus responsáveis.</li>
+            <li>Em caso de uso de bronzeadores ou cremes, antes de entrar na piscina, é necessário passar pela ducha
+                para
+                remover o produto da pele.</li>
+        </ul>
+        <h4>É EXPRESSAMENTE PROIBIDO:</h4>
+        <ul class="sublinhado">
+            <li><strong>Levar a área da piscina: frascos, copos, garrafas, metais, porcelana ou similares, sujeitos à
+                    quebra, que possam atentar contra a segurança dos usuários.</strong></li>
+            <li><strong>Praticar quaisquer tipos de brincadeiras e jogos que possam prejudicar material ou moralmente os
+                    demais frequentadores.</strong></li>
+            <li><strong>Reservar ou retirar as espreguiçadeiras dos seus locais.</strong></li>
+            <li><strong>Fumar, usar aparelhos sonoros ou boias grandes nas áreas das piscinas.</strong></li>
+        </ul>
+        <h2>Sala Kids</h2>
+        <h3>Funcionamento: 09h às 21h</h3>
+
+        <h1><i class="ri-alert-line"></i> Procedimentos de Emergência e Segurança</h1>
+        <h2>Prevenção Contra Incêndios</h2>
+        <ul>
+            <li>O hotel tem toda a atenção para prevenir incêndios e, além de todas as instalações e equipamentos para
+                combate
+                ao fogo, tem uma equipe treinada para prevenir e combater desagradáveis ocorrências.</li>
+            <br>
+            <li>É proibido fumar nos apartamentos e áreas sociais. É proibido também o uso de artigos como forno
+                elétrico,
+                velas, explosivos ou artigos inﬂamáveis, como pólvora, gasolina e similares.</li>
+            <br>
+            <li>Em caso de incêndio, informe imediatamente nossa recepção no ramal 9. Se achar que está apto, procure o
+                extintor
+                de incêndio mais próximo dentre os localizados nas áreas sociais e veriﬁque a especiﬁcação do mesmo
+                antes do
+                acionamento.</li>
+            <br>
+            <li>Mantenha a calma. Não perca tempo recolhendo seus pertences. Saia do apartamento e feche a porta.
+                Utilize as
+                escadas e demais saídas de emergência, conforme indicadas na rota de fuga, atrás da porta de entrada do
+                apartamento. Não acione os elevadores. Se houver muita fumaça, cubra seu rosto com uma toalha úmida.
+            </li>
+        </ul>
+
+        <h2>Cofre de Segurança</h2>
+        <span>O serviço de cofre é gratuito. Caso o equipamento seja daniﬁcado ou haja necessidade de abertura forçada
+            por
+            mau procedimento, será cobrado o custo de um novo equipamento. Siga as instruções apresentadas na porta do
+            cofre. Se errar a senha por 3 vezes consecutivas, o equipamento autobloqueia e a abertura só poderá ser
+            feita
+            pela gerência em horários especíﬁcos.</span>
+
+        <h2>Segurança Alimentar</h2>
+        <span>Seguimos rigorosamente as exigências da ANVISA quanto a qualidade e segurança alimentar, para o bem-estar
+            de
+            nossos hóspedes. Para a segurança de todos os hóspedes, não utilizamos utensílios de vidro, como garrafas e
+            copos nas áreas de lazer. Solicitamos que não leve alimentos para fora do restaurante. Em caso de
+            necessidade
+            especial, contate nossa equipe.</span>
+
+        <h2>Voltagem do Hotel</h2>
+        <span>A voltagem nas tomadas dos nossos apartamentos é 220V. Possuímos adaptadores de tomadas na Recepção para
+            empréstimo. Veriﬁque disponibilidade dos mesmos através do ramal 9.
+            <br>
+            Em caso de perda, será cobrada uma taxa pelo item.</span>
+
+        <h2>Danos Patrimoniais</h2>
+        <span>Caso seja constatada a falta ou dano de algum item que compõe o apartamento, será cobrada uma taxa
+            correspondente ao valor do objeto ou material a ser substituído.</span>
+
+        <h2>Acesso as Áreas Comuns</h2>
+        <span>As áreas comuns do hotel são para uso exclusivo dos hóspedes, tendo apenas o Lobby como local permitido
+            para
+            receber convidados.</span>
+
+        <h1><i class="ri-service-bell-line"></i> Serviços</h1>
+        <h2>Check-in & Check-out</h2>
+        <h3>Horário de Check-in: a partir das 14h.</h3>
+        <h3>Horário de Check-out: até 12h.</h3>
+        <ul class="sublinhado">
+            <li>Caso precise permanecer além desse horário, por favor, consulte a disponibilidade e valores através do
+                ramal
+            <li>Caso não haja disponibilidade, possuímos um maleiro para caso deseje deixar suas bagagens guardadas no
+                hotel.</li>
+        </ul>
+
+        <h2>Acesso à Internet</h2>
+        <span>Disponibilizamos internet Wi-Fi gratuita em todas as áreas do hotel.
+            <br>
+            Para acessar, habilite o Wi-Fi e selecione nossa rede. Abra o navegador de internet, insira seu login e
+            senha,
+            conforme instruções abaixo:</span>
+        <h3>LOGIN: número do quarto
+            <br>
+            SENHA: último sobrenome
+        </h3>
+
+        <h2>Estacionamento</h2>
+        <span>Nosso hotel não possui estacionamento próprio, porém há no sub-solo do prédio uma empresa que fornece esse
+            serviço, caso convenha ao hóspede.</span>
+
+        <h2>Achados e Perdidos</h2>
+        <ul>
+            <li>Nossa Governança ajudará você caso tenha esquecido algum item no hotel. Os artigos encontrados serão
+                guardados
+                por 3 meses. Após esse período, serão considerados abandonados e descartados.</li>
+            <li>Comidas e bebidas abertas serão descartadas imediatamente. Os itens fechados e não perecíveis, serão
+                guardados
+                por três dias e depois descartados.</li>
+            <li>Os objetos estarão disponíveis para retirada durante o horário comercial, ou podem ser enviados por
+                correio
+                (despesa por conta do hóspede)</li>
+        </ul>
+
+        <h2>Animais de Estimação</h2>
+        <span>O Hotel é Dog Friendly e aceita cães até 13kg. Uma taxa adicional pelo seu pet será cobrada. Consulte o
+            Guia no seu apartamento ou peça na Recepção. Não é permitida a circulação de animais soltos nas dependências
+            do
+            Hotel. É proibido deixar o animal sozinho no apartamento. Cães-guia e Animais de Suporte Emocional também
+            são
+            bem-vindos e a taxa extra não será cobrada. </span>
+
+        <h2>Apartamento Para Não Fumantes</h2>
+        <span>Não é permitido fumar nos apartamentos e nas dependências internas do hotel bem como em suas áreas comuns,
+            conforme Lei Federal número n°12.546/2014.</span>
+        <ul class="sublinhado">
+            <li>Caso não haja cumprimento desta norma, uma multa no valor de uma (1) diária será cobrada.</li>
+        </ul>
+
+        <h2>Cartão Chave do Apartamento</h2>
+        <span>Use o cartão para acionar o sistema de energia do apartamento, inserindo-o no dispositivo ao lado da
+            porta.
+            Caso deseje um cartão extra, por gentileza, solicitá-lo junto a Recepção, apresentando sua identiﬁcação.
+            <br>
+            Para maior segurança, nossos funcionários só estão autorizados a emitir novos cartões mediante identiﬁcação.
+            <br>
+            Mantenha-o distante de celulares e aparelhos eletrônicos para não os desmagnetizar. Solicitamos a devolução
+            do
+            cartão no check-out</span>
+        <ul class="sublinhado">
+            <li>Em caso de perda ou extravio, favor comunicar imediatamente a Recepção, para cancelamento e emissão de
+                nova
+                unidade.</li>
+        </ul>
+
+        <h2>Empréstimo de objetos</h2>
+        <span>Precisando de algum item emprestado, tais como, utensílios de A&B, adaptadores de tomada, guarda-chuva,
+            etc.,
+            verifique a disponibilidade através do ramal 9.
+            <br>
+            A não devolução do item implicará em cobrança de valor variável (de acordo com cada item).</span>
+
+        <h2>Lavanderia</h2>
+        <h3>Funcionamento: 08h às 15h</h3>
+        <span>Instruções dos serviços oferecidos e valores se encontram na ﬁcha localizada dentro do closet ou próxima
+            ao
+            cofre.</span>
+
+        <h2>Limpeza e Arrumação dos Apartamentos</h2>
+        <span>A limpeza e arrumação dos apartamentos,entre 8h e 16h20.</span>
+        <span>Caso deseje prioridade na arrumação do seu apartamento ou agendamento para horário posterior às 16h, entre
+            em
+            contato com a Recepção através do ramal 9.</span>
+
+        <h2>Taxa de Turismo Sustentável</h2>
+        <span>A taxa de turismo sustentável é cobrada por unidade habitacional, de hóspedes não residentes no Município
+            de
+            Gramado, por diária gerada em cada unidade habitacional.</span>
+        <ul class="sublinhado">
+            <li>Lei Municipal n°3.461/2015.</li>
+        </ul>
+
+        <h1><i class="ri-tv-line"></i> Guia de Canais</h1>
+        <ol>
+            <li>Canal do Hotel</li>
+            <li>Rede Globo</li>
+            <li>SBT</li>
+            <li>Band</li>
+            <li>Rede Record</li>
+            <li>Globo News</li>
+            <li>Rede TV</li>
+            <li>SporTV</li>
+            <li>Multishow</li>
+            <li>Telecine Premium</li>
+        </ol>
+    </main>
+  <script>
+    function openSidebar() {
+      document.querySelector('.sidebar').classList.add('open');
+      document.getElementById('overlay').classList.add('ativo');
+    }
+
+    function closeSidebar() {
+      document.querySelector('.sidebar').classList.remove('open');
+      document.getElementById('overlay').classList.remove('ativo');
+    }
+
+  </script>
+  <script>
+    const temaClaro = "style-claro.css";
+    const temaRed = "styles.css";
+
+    const link = document.getElementById("estilo");
+    const icone = document.getElementById("icone-tema");
+    const imgLogo = document.getElementById("logo");
+
+    const imgClaro = "./pgr.png";
+    const imgEscuro = "./pgrW.png"
+
+    function aplicarTema() {
+      const temaSalvo = localStorage.getItem("tema") || temaClaro;
+      link.setAttribute("href", temaSalvo);
+
+      if (temaSalvo.endsWith(temaClaro)) {
+        icone.className = "ri-toggle-line";
+        imgLogo.src = imgClaro;
+      } else {
+        icone.className = "ri-toggle-fill";
+        imgLogo.src = imgEscuro;
+      }
+    }
+
+    function alternarEstilo() {
+      const temaAtual = link.getAttribute("href");
+      const novoTema = temaAtual.endsWith(temaClaro) ? temaRed : temaClaro;
+      link.setAttribute("href", novoTema);
+      localStorage.setItem("tema", novoTema);
+
+      icone.className = novoTema === temaClaro ? "ri-toggle-line" : "ri-toggle-fill";
+
+      if (novoTema === temaClaro) {
+        imgLogo.src = imgClaro;
+      } else {
+        imgLogo.src = imgEscuro;
+      }
+    }
+
+    aplicarTema();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Informações do Hotel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link id="estilo" rel="stylesheet" href="./assets/style-claro.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <header>
+    <div class="menu-prodigy">
+      <a href="https://www.grupowish.com/prodigy-gramado-by-wish">
+        <img id="logo" src="./assets/pgrW.png" alt="Prodigy">
+      </a>
+    </div>
+    <button id="botao-tema" onclick="alternarEstilo()">
+      <i id="icone-tema" class="ri-toggle-line"></i>
+    </button>
+    <div class="menu-icon" onclick="openSidebar()"><i class="ri-menu-line"></i></div>
+  </header>
+  <div id="overlay" class="overlay" onclick="fecharMenu()"></div>
+  <div id="mySidebar" class="sidebar">
+    <span class="closebtn" onclick="closeSidebar()"><i class="ri-close-large-line"></i></span>
+    <a href="https://www.grupowish.com/">Grupo WISH</a>
+    <a href="https://www.grupowish.com/prodigy-gramado-by-wish/acomodacoes">Acomodações</a>
+    <a href="https://www.grupowish.com/prodigy-gramado-by-wish/dog-friendly">Dog Friendly</a>
+  </div>
+
+  <!-- <img class="pgr" src="./assets/pgrW.png" alt=""> -->
+  <main>
+    <h1><i class="ri-service-bell-line"></i> Horários do Hotel</h1>
+
+    <div class="card-grid">
+
+      <div class="card">
+        <div class="icon"><i class="ri-cup-line"></i></div>
+        <div class="title">Café da Manhã</div>
+        <div class="desc">06:30 - 10:30</div>
+      </div>
+
+      <a href="https://grupowish.ninegrid.com.br/hospitality/pdv/SDUO/NjM2OA==">
+        <div class="card">
+          <div class="icon"><i class="ri-restaurant-line"></i></div>
+          <div class="title">Restaurante</div>
+          <div class="desc">12:00 - 22:40</div>
+          <div class="descricao">Acesso ao Cardápio</div>
+        </div>
+      </a>
+
+      <div class="card">
+        <div class="icon"><i class="ri-service-bell-line"></i></div>
+        <div class="title">Check-in</div>
+        <div class="desc">A partir das 14:00</div>
+      </div>
+
+
+      <div class="card">
+        <div class="icon"><i class="ri-door-closed-line"></i></div>
+        <div class="title">Check-out</div>
+        <div class="desc">Até 12:00</div>
+      </div>
+
+      <a href="https://wa.me/5432950000">
+        <div class="card">
+          <div class="icon"><i class="ri-phone-line"></i></div>
+          <div class="title">Recepção 24h</div>
+          <div class="desc">Ramal: 9</div>
+          <div class="descricao"><i class="ri-whatsapp-line"></i>Whatsapp</div>
+        </div>
+      </a>
+
+      <div class="card">
+        <div class="icon"><i class="ri-wifi-line"></i></div>
+        <div class="title">Wi-Fi</div>
+        <div class="desc">Rede: Prodigy Gramado</div>
+        <div class="descc">Login: Seu apartamento; Senha: Seu último sobrenome</div>
+      </div>
+
+      <a href="./assets/saiba-mais.html">
+        <div class="card">
+          <div class="icon"><i class="ri-information-line"></i></div>
+          <div class="title">Saiba Mais</div>
+          <div class="descricao">Outras informações</div>
+        </div>
+      </a>
+
+    </div>
+  </main>
+  <script>
+    function openSidebar() {
+      document.querySelector('.sidebar').classList.add('open');
+      document.getElementById('overlay').classList.add('ativo');
+    }
+
+    function closeSidebar() {
+      document.querySelector('.sidebar').classList.remove('open');
+      document.getElementById('overlay').classList.remove('ativo');
+    }
+
+  </script>
+  <script>
+    const temaClaro = "style-claro.css";
+    const temaRed = "styles.css";
+
+    const link = document.getElementById("estilo");
+    const icone = document.getElementById("icone-tema");
+    const imgLogo = document.getElementById("logo");
+
+    const imgClaro = "./assets/pgr.png";
+    const imgEscuro = "./assets/pgrW.png"
+
+    function aplicarTema() {
+      const temaSalvo = localStorage.getItem("tema") || temaClaro;
+      link.setAttribute("href", temaSalvo);
+
+      if (temaSalvo.endsWith(temaClaro)) {
+        icone.className = "ri-toggle-line";
+        imgLogo.src = imgClaro;
+      } else {
+        icone.className = "ri-toggle-fill";
+        imgLogo.src = imgEscuro;
+      }
+    }
+
+    function alternarEstilo() {
+      const temaAtual = link.getAttribute("href");
+      const novoTema = temaAtual.endsWith(temaClaro) ? temaRed : temaClaro;
+      link.setAttribute("href", novoTema);
+      localStorage.setItem("tema", novoTema);
+
+      icone.className = novoTema === temaClaro ? "ri-toggle-line" : "ri-toggle-fill";
+      
+
+      if (novoTema === temaClaro) {
+        imgLogo.src = imgClaro;
+      } else {
+        imgLogo.src = imgEscuro;
+      }
+    }
+
+    aplicarTema();
+  </script>
+
+</body>
+
+</html>
