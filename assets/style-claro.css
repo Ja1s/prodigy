@@ -54,7 +54,9 @@ span {
 }
 
 .card:hover {
-    transform: translateY(-4px);
+    transform: translateY(0.5rem);
+    background: linear-gradient(135deg, #fff, #aaa);
+    color: #ccc;
 }
 
 .icon {
