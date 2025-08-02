@@ -54,9 +54,10 @@ span {
 }
 
 .card:hover {
-    transform: translateY(0.5rem);
+    transform: scale(1.1);
     background: linear-gradient(135deg, #fff, #aaa);
     color: #b7153f;
+    z-index: 1;
 }
 
 .icon {
@@ -114,6 +115,7 @@ header {
     border-radius: 1rem;
     margin-left: 5px;
     width: 70vw;
+    z-index: 999;
 }
 
 main {
